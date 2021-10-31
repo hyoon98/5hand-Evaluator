@@ -1,23 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+import "bootstrap/dist/css/bootstrap.css";
 
 function App() {
+  document.body.style.backgroundColor = "lightsteelblue";
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1 className="mx-auto my-4 text-center">Poker Hand Evaluator</h1>
+      <div className="mx-auto" style={{ height: "40vh", width: "40vw" }}></div>
+      <div className="buttons d-flex justify-content-between align-items-center w-25 mx-auto h-100 my-auto">
+        <button className="generate btn btn-secondary">Generate Hand</button>
+        <button className="generate btn btn-primary">Evaluate Hand</button>
+      </div>
     </div>
   );
 }
